@@ -1,0 +1,43 @@
+
+    
+
+    <div class="container align-middle col-md-3">
+
+        <!-- Start Main Header -->
+        <div class="d-flex flex-row align-middle">
+            <!-- Start Logo -->
+            <div class="mr-auto p-3"><img src="/assets/img/appsolutely.png" style="width:250px;height:100px;" />
+            </div>
+            <!-- End Logo -->
+        </div>
+        <!-- End Main Header -->
+
+       
+    <div class="card border-dark">
+        <div class="card-header bg-warning text-gray">
+            <h4 class="card-title text-center">Registration Page</h4>
+        </div>
+
+        <form class="form-signin">
+        
+            <div class="form-label-group">
+                <p class=" text-center">Please register your Email ID</p>
+            </div>
+            
+            <div>
+                <input #username class="form-control mb-3" placeholder="@appsolutely.ph" required/>
+            </div>
+
+            <div>
+                <input #initialpassword type="password" class="form-control mb-3" placeholder="Enter password" required/>
+            </div>
+                
+            <div>
+                <input #password type="password" class="form-control mb-3" placeholder="Confirm password" required/>
+            </div>
+                        
+            <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="add(username.value,password.value)">Submit</button>
+
+        </form>
+    </div>
+    </div>
